@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/FrashtoGoat/springcloud-config-store.git
+#          uri: git@github.com:FrashtoGoat/springcloud-config-store.git
+#          skip-ssl-validation: true
+          default-label: main
+          username: FrashtoGoat
+          password: Kobe111@@@
+#          timeout: 20
+#          search-paths: 默认根目录
+
+server:
+  port: 8080
+
+
