@@ -4,5 +4,5 @@ spring:
   application:
     name: config-client
 
-name: config-client-dev
+name: config-client-devvv
 
