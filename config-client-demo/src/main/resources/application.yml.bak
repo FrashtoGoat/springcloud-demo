@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        jdbc:
+          enabled: true
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:///F:/dir/config-repos/mrcode/dirr
+            - file:///F:/dir/config-repos/mrcode/zirr
+
+      #git作为仓库有bug,暂时放弃
+#        git:
+#          uri: https://github.com/FrashtoGoat/springcloud-config-store.git
+#          skipSslValidation: true
+#          username: FrashtoGoat2
+#          password: Kobe111@@@
+#          default-label: main
+##          timeout: 60
+
+#        git:
+#          uri: git@github.com:FrashtoGoat/springcloud-config-store.git
+#          username: FrashtoGoat
+#          password: Kobe111@@@
+#          default-label: main
+
+server:
+  port: 8088
+
+
