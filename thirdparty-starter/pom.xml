@@ -4,10 +4,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xiaoluban</groupId>
-    <artifactId>config-client-demo</artifactId>
+    <artifactId>thirdparty-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>config-client-demo</name>
-    <description>config-client-demo</description>
+    <name>thirdparty-starter</name>
+    <description>thirdparty-starter</description>
 
     <parent>
         <artifactId>springcloud-demo</artifactId>
@@ -20,12 +20,7 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-            <version>2.2.8.RELEASE</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,6 +34,16 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>plane-machine-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
     </dependencies>
 
