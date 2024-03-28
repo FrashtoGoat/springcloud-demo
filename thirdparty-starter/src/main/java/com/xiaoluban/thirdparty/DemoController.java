@@ -2,7 +2,6 @@ package com.xiaoluban.thirdparty;
 
 import com.demo.planemachines.factory.AcmeFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -19,6 +18,12 @@ public class DemoController {
 
     @RequestMapping("/acme")
     public String acme(){
+        acmeFactory.init();
+        return acmeFactory.toString();
+    }
+
+    @RequestMapping("/thread1")
+    public String thread1(){
         acmeFactory.init();
         return acmeFactory.toString();
     }
