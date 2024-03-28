@@ -13,6 +13,7 @@
     <modules>
         <module>config-server-demo</module>
         <module>config-client-demo</module>
+        <module>springboot-demo</module>
         <module>thirdparty-starter</module>
     </modules>
 

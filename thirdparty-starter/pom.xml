@@ -21,6 +21,19 @@
     <dependencies>
 
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+        <!--工具类 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.4.1</version>
+        </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -34,11 +47,11 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>com.demo</groupId>
-            <artifactId>plane-machine-spring-boot-starter</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.demo</groupId>-->
+<!--            <artifactId>plane-machine-spring-boot-starter</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
